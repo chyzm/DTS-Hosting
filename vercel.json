@@ -1,16 +1,12 @@
 {
-  "rewrites": [
-    {
-      "source": "/(?!DanchristabelSchool|SleekSpa|WomenSpa)(.*)",
-      "destination": "/Home/$1"
-    }
-  ],
   "routes": [
-    { "src": "/DanchristabelSchool", "dest": "/DanchristabelSchool/index.html" },
-    { "src": "/SleekSpa", "dest": "/SleekSpa/index.html" },
-    { "src": "/WomenSpa", "dest": "/WomenSpa/index.html" }
+    { "src": "^/$", "dest": "/home/index.html" },
+    { "src": "/DanchristabelSchool/?", "dest": "/DanchristabelSchool/index.html" },
+    { "src": "/SleekSpa/?", "dest": "/SleekSpa/index.html" },
+    { "src": "/WomenSpa/?", "dest": "/WomenSpa/index.html" }
   ]
 }
+
 
 
   
