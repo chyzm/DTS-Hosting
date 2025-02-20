@@ -14,7 +14,7 @@ async function searchPages() {
     try {
         resultsDiv.innerHTML = "<p>Loading...</p>"; // Show loading message
 
-        let response = await fetch("search-index.json");
+        let response = await fetch("Home/search-index.json");
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
