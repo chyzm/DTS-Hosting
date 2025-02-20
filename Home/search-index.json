@@ -1,19 +1,19 @@
 [
-    {
-      "url": "http://127.0.0.1:5500/DanchristabelSchool/",
-      "title": "Danchristabel School",
-      "keywords": "school, nursery, primary education, learning, students, teachers, danchristabel"
-    },
-    {
-      "url": "http://127.0.0.1:5500/SleekSpa",
-      "title": "Sleek Spa",
-      "keywords": "sleek, sleek Spa, wellness, spa, Spa in Abuja"
-    },
+  {
+    "url": "/DanchristabelSchool/",
+    "title": "Danchristabel School",
+    "keywords": "school, nursery, primary education, learning, students, teachers, danchristabel"
+  },
+  {
+    "url": "/SleekSpa/",
+    "title": "Sleek Spa",
+    "keywords": "sleek, sleek Spa, wellness, spa, Spa in Abuja"
+  },
+  {
+    "url": "/WomenSpa/",
+    "title": "Women Spa",
+    "keywords": "wellness, spa, Women Spa, Spa in Lagos"
+  }
+]
 
-    {
-      "url": "http://127.0.0.1:5500/WomenSpa",
-      "title": "Women  Spa",
-      "keywords": "wellness, spa, Women Spa, Spa in Lagos"
-    }
-  ]
   
