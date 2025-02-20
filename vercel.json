@@ -1,9 +1,9 @@
 {
-  "routes": [
-    { "src": "^/$", "dest": "/home/index.html" },
-    { "src": "/DanchristabelSchool/?", "dest": "/DanchristabelSchool/index.html" },
-    { "src": "/SleekSpa/?", "dest": "/SleekSpa/index.html" },
-    { "src": "/WomenSpa/?", "dest": "/WomenSpa/index.html" }
+  "rewrites": [
+    { "source": "/", "destination": "/home/index.html" },
+    { "source": "/WomenSpa", "destination": "/WomenSpa/index.html" },
+    { "source": "/DanchristabelSchool", "destination": "/DanchristabelSchool/index.html" },
+    { "source": "/SleekSpa", "destination": "/SleekSpa/index.html" }
   ]
 }
 
