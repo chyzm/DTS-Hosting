@@ -1,6 +1,6 @@
 {
   "rewrites": [
-    { "source": "/", "destination": "/home/index.html" },
+    { "source": "/", "destination": "/Home/index.html" },
     { "source": "/WomenSpa", "destination": "/WomenSpa/index.html" },
     { "source": "/DanchristabelSchool", "destination": "/DanchristabelSchool/index.html" },
     { "source": "/SleekSpa", "destination": "/SleekSpa/index.html" }
