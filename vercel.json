@@ -1,0 +1,9 @@
+{
+    "builds": [
+      {
+        "src": "public/home.html",
+        "use": "@vercel/static"
+      }
+    ]
+  }
+  
