@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Org</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="style.css" rel="stylesheet">
+
+    <script>
+        function openPopup() {
+            document.getElementById("contactPopup").style.display = "block";
+            document.getElementById("popupOverlay").style.display = "block";
+        }
+
+        function closePopup() {
+            document.getElementById("contactPopup").style.display = "none";
+            document.getElementById("popupOverlay").style.display = "none";
+        
+        function closeSearchResults() {
+        document.getElementById("searchResults").style.display = "none";
+        }
+        
+
+        }
+    </script>
+    <a href="/DanchristabelSchool/index.html"></a>
+    <a href="/SleekSpa/index.html"></a>
+    <a href="/WomenSpa/index.html"></a>
+</head>
+<body>
+    <header>
+        <a href="home.html"><img src="image/logo-1.png" alt="ORG Logo" class="logo"></a> 
+        <button class="contact-btn" onclick="openPopup()">Contact</button>
+       
+    </header>
+    <div class="search-container">
+        <input type="text" id="searchInput" class="search-box" placeholder="Search...">
+        <button class="search-button" onclick="searchPages()">
+            <i class="fas fa-search"></i> </button>
+            <div id="searchResults"></div>
+    </div>
+    <div id="searchResults"></div>
+   
+    <main>
+        <div class="content-box">
+            <h1>You don’t have to break the bank to own a website.</h1>
+            <p>Join our shared hosting.</p>
+            <span class="details">FREE HOSTING | LANDING PAGE | BUSINESS NAME</span>
+        </div>
+    </main>
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/duriel_tech/" target="_blank"><img src="image/instagram.png" alt="Instagram" ></a>
+            <a href="https://web.facebook.com/profile.php?viewas=100000686899395&id=61573469219231" target="_blank"><img src="image/facebook.png" alt="Facebook"></a>
+            <a href="https://x.com/duriel_tech?s=21" target="_blank"><img src="image/X.png" alt="X"></a>
+            <a href="https://www.tiktok.com/@duriel_tech?_t=ZM-8u4oiqOkev8&_r=1" target="_blank"><img src="image/TikTok.png" alt="TikTok"></a> 
+            
+        </div>
+    </footer>
+
+    <div id="popupOverlay" class="popup-overlay" onclick="closePopup()"></div>
+
+<div id="contactPopup" class="popup">
+    <p>Contact us via:</p>
+    <button class="whatsapp-btn" onclick="window.open(href='https://wa.me/+2347031016787', '_blank')">📱 WhatsApp</button>
+    <button class="call-btn" onclick="window.location.href='tel:+23470310167'" target="_blank">📞 Call</button>
+    <button class="close-btn" onclick="closePopup()">❌ Close</button>
+</div>
+
+
+    <script src="main.js"></script>
+    <script src="search.js"></script>
+
+
+</body>
+</html>
