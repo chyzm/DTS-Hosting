@@ -1,3 +1,11 @@
+window.addEventListener('load', function () {
+    document.body.style.overflow = 'hidden';
+    setTimeout(function () {
+        document.getElementById('preloader').style.display = 'none';
+        document.body.style.overflow = 'auto';
+    }, 3000); // Adjust the time as needed
+});
+
 function searchPages() {
     let searchInput = document.getElementById('searchInput');
     let query = searchInput.value.toLowerCase().trim();

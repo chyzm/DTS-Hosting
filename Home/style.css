@@ -9,6 +9,65 @@ body {
     
 
 }
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #222; /* Or your preferred background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.logo-container {
+    position: relative; /* Needed for absolute positioning of the ring */
+    display: inline-block; /* Allows the container to fit the content */
+}
+
+.blinking-logo {
+    width: 150px; /* Adjust the size as needed */
+    height: auto;
+    animation: blink 2s linear infinite;
+    position: relative; /* To ensure the ring is above the logo */
+    z-index: 1; /* Place the logo above the ring */
+}
+
+.rotating-ring {
+    position: absolute;
+    top: -10px; /* Adjust as needed */
+    left: -10px; /* Adjust as needed */
+    right: -10px; /* Adjust as needed */
+    bottom: -10px; /* Adjust as needed */
+    border: 4px solid #D3D3D3; /* Or your preferred ring color */
+    border-radius: 50%;
+    animation: rotate 4s linear infinite;
+    box-shadow: 0 0 15px rgba(200, 200, 200, 0.9), /* Outer glow */
+                0 0 7px rgba(230, 230, 230, 0.7) inset; /* Inner glow */
+}
+
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 header {
     display: flex;
     justify-content: space-between;
