@@ -1,56 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Education">
-    <meta name="keywords" content="school, Danchristabel, Danchristabel School">
-    <title>DanChristabel School</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
-   
-    
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Education">
+  <meta name="keywords" content="school, Danchristabel, Danchristabel School">
+  <title>DanChristabel International School</title>
+  <link rel="icon" href="/DanchristabelSchool/img/logo-1.png" type="image/logo-icon"> 
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+        integrity="sha512-o8C12jaEOUtm+P+fGZ9o4FGArEHVJ5/cMsZLfwWksHn2x+/TFXqv5HzCZWiwvFzjPAb06fL2qKmxT0VHe3D1Qg==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/DanchristabelSchool/style.css" rel="stylesheet">
+
 </head>
-<body id="DanchristabelSchool">
-    <header>
-        
-        <div><img class="logo" src="img/logo.jpeg"></div>
-        <h2 class="School-name">DanChristabel International School</h2>
-    </header>
-    <section class="hero">
-        <h1>Welcome to a Future of Learning</h1>
-        <p>Quality education with modern facilities.</p>
-        <a href="#contact" class="cta-button">Get in Touch</a>
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <h1>DanChristabel International School</h1>
+  </div>
 
+  <!-- Header with Logo, Navigation and Social Icons (for larger screens) -->
+  <header>
+    <div class="logo">
+      <a href="index.html"><img src="/DanchristabelSchool/img/logo-1.png" alt="Logo"></a>
+      <p class="school-name">DanChristabel Int. School</p>
+    </div>
+    <!-- Hamburger toggle for mobile -->
+    <button class="menu-toggle" onclick="toggleMenu()">
+      <i class="fas fa-bars"></i>
+    </button>
+    <!-- Navigation Menu -->
+    <nav>
+      <ul id="nav-menu">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+      </ul>
+    </nav>
+    <!-- Social Icons (for larger screens) -->
+    <div class="header-social">
+      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.instagram.com/danchristabel_int_school/" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+  </header>
 
-       
-    </section>
-    <section class="features">
-        <div class="feature-box">
-            <h2>Experienced Teachers</h2>
-            <p>Highly qualified and dedicated educators.</p>
-        </div>
-        <div class="feature-box">
-            <h2>Smart Learning</h2>
-            <p>Digital classrooms and interactive lessons.</p>
-        </div>
-        <div class="feature-box">
-            <h2>Affordable Fees</h2>
-            <p>Quality education at reasonable prices.</p>
-        </div>
-    </section>
-    <section id="contact" class="hero">
-        <h2>Contact Us</h2>
-        <p>Have questions? Reach out to us!</p>
-        <a href="https://wa.me/1234567890" target="_blank" class="cta-button">WhatsApp</a>
-        <a href="tel:+1234567890" class="cta-button">Call</a>
-    </section>
-    <footer class="footer">
-        &copy; 2025 DanChristabel International School. All rights reserved.
-        <div>Powered by<a href="/Home/index.html"><img src="/Home/image/logo-1.png" width="60px;" height="60px"></a></div>
-    </footer>
-    <button id="backToTop" class="back-to-top" onclick="scrollToTop()">&#8679;</button>
-    <script src="main.js"></script>
+  <!-- HERO SECTION -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <h1>Welcome to DanChristabel International School</h1>
+      <p>Empowering students for a brighter future</p>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="about" id="about">
+    <div class="section-title gallery-title">About Us</div>
+    <p>At DanChristabel International School, we nurture young minds through innovative teaching and a supportive environment. Our commitment is to develop future leaders and lifelong learners.</p>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section class="services" id="services">
+    <div class="section-title gallery-title">Our Services</div>
+    <div class="service-list">
+      <div class="service">
+        <h3>Quality Education</h3>
+        <p>State-of-the-art facilities and experienced teachers.</p>
+      </div>
+      <div class="service">
+        <h3>Extracurriculars</h3>
+        <p>Clubs, sports, and creative activities to enrich learning.</p>
+      </div>
+      <div class="service">
+        <h3>Modern Curriculum</h3>
+        <p>Curriculum designed to prepare students for the global future.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY SECTION -->
+  <section class="gallery" id="gallery">
+    <div class="section-title gallery-title">Gallery</div>
+    <div class="gallery-grid">
+      <img src="/DanchristabelSchool/img/c-1.jpeg" alt="Gallery Image 1" />
+      <img src="/DanchristabelSchool/img/c-4.jpg" alt="Gallery Image 2" />
+      <img src="/DanchristabelSchool/img/c-5.jpg" alt="Gallery Image 3" />
+      <img src="/DanchristabelSchool/img/c-6.jpg" alt="Gallery Image 4" />
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact" id="contact">
+    <div class="section-title gallery-title">Contact Us</div>
+    <p style="font-weight:bold">7 Lola Akindoju street, Seliat estate, Seliat, Egbeda.</p>
+  </section>
+
+  <!-- Fixed Contact Button (Bottom Left) -->
+  <button class="contact-btn" onclick="toggleContactModal()">Contact</button>
+  <!-- Contact Modal Options -->
+  <div class="contact-modal" id="contactModal">
+    <a href="https://wa.me/1234567890" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
+    <a href="tel:+1234567890"><i class="fas fa-phone"></i> Call Us</a>
+  </div>
+
+  <!-- Back to Top Button (Bottom Right) -->
+
+  <button id="backToTop" onclick="scrollToTop()" style="display: none;">Top</button>
+  <!-- Footer with Social Icons for Mobile -->
+  <footer>
+    
+    <p>&copy; 2025 DanChristabel International School</p>
+    <div>Powered by<a href="/Home/index.html"><img src="/Home/image/logo-1.png" width="60px;" height="60px"></a></div>
+    <div class="footer-social">
+      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.instagram.com/danchristabel_int_school/" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+  </footer>
+
+  <script src="/DanchristabelSchool/main.js"></script>
 </body>
 </html>
