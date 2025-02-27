@@ -3,7 +3,8 @@
     { "source": "/", "destination": "/Home/index.html" },
     { "source": "/WomenSpa", "destination": "/WomenSpa/index.html" },
     { "source": "/DanchristabelSchool", "destination": "/DanchristabelSchool/index.html" },
-    { "source": "/SleekSpa", "destination": "/SleekSpa/index.html" }
+    { "source": "/SleekSpa", "destination": "/SleekSpa/index.html" },
+    { "source": "/Nuvia", "destination": "/Nuvia/index.html" }
   ]
 }
 
